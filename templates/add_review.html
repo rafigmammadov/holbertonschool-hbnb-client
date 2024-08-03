@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="hbnb logo">
+        <nav class="navbar-menu">
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
+    <main>
+        <form id="review-form">
+            <h1>Add a Review</h1>
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" readonly>
+            
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+            
+            <label for="review-rating">Rating:</label>
+            <select id="review-rating" name="rating" required>
+                <option value="1 star">1 star</option>
+                <option value="2 star">2 star</option>
+                <option value="3 star">3 star</option>
+                <option value="4 star">4 star</option>
+                <option value="5 star">5 star</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="/static/add_review.js"></script>
+</body>
+</html>
