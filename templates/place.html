@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,62 +6,30 @@
     <title>Place Details</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <img src="images/logo.png" alt="hbnb logo">
         <nav class="navbar-menu">
             <a href="login.html" id="login-link">Login</a>
-            <a href="add_review.html" id="add-review">Add Review</a>
+            <a href="add_review.html" id="add-review" style="display:none;">Add Review</a>
         </nav>
     </header>
     <main>
         <h1 class="name-place">Place Name</h1>
         <section id="place-details">
-            <!-- Place details will be populated dynamically -->
             <img class="place-image" src="images/placeholder.jpg" alt="image">
             <div class="place-info">
-                <p><strong>Host:</strong></p>
-                <p><strong>Price per night:</strong></p>
-                <p><strong>Location:</strong></p>
-                <p><strong>Description:</strong></p>
-                <p><strong>Amenities:</strong></p>
+                <p><strong>Host:</strong> <span id="host-name"></span></p>
+                <p><strong>Price per night:</strong> <span id="price-per-night"></span></p>
+                <p><strong>Location:</strong> <span id="location"></span></p>
+                <p><strong>Description:</strong> <span id="description"></span></p>
+                <p><strong>Amenities:</strong> <span id="amenities"></span></p>
             </div>
         </section>
         <section id="reviews">
-            <!-- Reviews will be populated dynamically -->
-             <h1>Reviews</h1>
-             <ul class="review-list">
-                <li class="review-card">
-                    <div>
-                        <h3>User's name</h3>
-                        <p>Comment</p>
-                        <p>Rating: </p>
-                    </div>
-                </li>
-                <li class="review-card">
-                    <div>
-                        <h3>User's name</h3>
-                        <p>Comment</p>
-                        <p>Rating: </p>
-                    </div>
-                </li>
-                <li class="review-card">
-                    <div>
-                        <h3>User's name</h3>
-                        <p>Comment</p>
-                        <p>Rating: </p>
-                    </div>
-                </li>
-                <li class="review-card">
-                    <div>
-                        <h3>User's name</h3>
-                        <p>Comment</p>
-                        <p>Rating: </p>
-                    </div>
-                </li>
-             </ul>
+            <h1>Reviews</h1>
+            <ul class="review-list" id="review-list"></ul>
         </section>
         <section id="add-review">
             <h2>Add a Review</h2>
